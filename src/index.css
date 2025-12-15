@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #dcb400;
+  --color-background-light: #f8f8f5;
+  --color-background-dark: #f8f8f5;
+  --font-poppins: Poppins, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-background-light);
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins-Bold"), url("./assets/fonts/Poppins-Bold.ttf");
+}
+
+:root {
+  font-family: var(--font-poppins);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
